@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Autorizado com sucesso</title>
+  </head>
+  <body>
+    <h2>✅ Autorização Shopee concluída!</h2>
+    <p id="info">Carregando dados...</p>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const code = params.get("code");
+      const shop_id = params.get("shop_id");
+      document.getElementById("info").innerText =
+        `Auth Code: ${code} \nShop ID: ${shop_id}`;
+    </script>
+  </body>
+</html>
